@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" href="./src/styles.css">
+    <link rel="icon" type="image/x-icon" href="./src/faviconV2.png">
+</head>
+<body>
+    <div class="logo">
+        <img src="https://cdn.prod.website-files.com/62745a1007e49e2461fb7ecd/62745a1007e49e6f2afb7fd1_HYF.svg" height="50" alt="HYF">
+    </div>
+
+    <div class="promo">
+        <p>Alex P. Cohort 50</p>
+    </div>
+
+    <h1>JavaScript Quiz</h1>
+
+    <div id="quiz-container">
+        <div id="start-screen">
+            <p>You will have a lot of questions to answer about JavaScript. You have time according to the difficulty level to complete the quiz.</p>
+            <p>Select difficulty: </p>
+            
+            <label>
+                <input type="radio" name="difficulty" value="easy" checked>
+                Easy (60 seconds per question)
+            </label><br>
+            
+            <label>
+                <input type="radio" name="difficulty" value="medium">
+                Medium (30 seconds per question)
+            </label><br>
+            
+            <label>
+                <input type="radio" name="difficulty" value="hard">
+                Hard (5 seconds per question)
+            </label><br><br>
+
+            <button id="start-btn" class="start-btn">Start Quiz</button>
+        </div>
+    </div>
+
+    <div class="result" id="result"></div>
+    
+    <div id="restart-options" style="display:none;">
+        <p>If you want to repeat the quiz, please select a difficulty level:</p>
+    
+        <label>
+            <input type="radio" name="difficulty-restart" value="easy" checked>
+            Easy (60 seconds per question)
+        </label><br>
+    
+        <label>
+            <input type="radio" name="difficulty-restart" value="medium">
+            Medium (30 seconds per question)
+        </label><br>
+    
+        <label>
+            <input type="radio" name="difficulty-restart" value="hard">
+            Hard (5 seconds per question)
+        </label><br><br>
+
+        <button id="restart-btn" class="restart-btn">Restart Quiz</button>
+    </div>
+
+    <script type="module" src="./src/app.js"></script>
+</body>
+</html>
